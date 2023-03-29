@@ -4,9 +4,9 @@ import asyncio
 
 # Edit your credentials here
 
-api_id = 26763788
-api_hash = '5bd46d55b597eeced05298b19ba786be'
-session_str = 'BQGYYgwAt_acUeuvKUhGGC6ScPbOm1C2MZ-u4CWzaqRYZ6UFOECI3-Oz2Deyj5zL1MH6MCQyHHydo-xw6tEJ2lSFEVkSUZQX3LklafHCF6CAAdaxjr374UiQbCONUPBUfEnOx5dGCx_3hBFa7b0KNFMnCEtRpbmlpmKGU-Wne2SUwImvBXaL3v0m7tf1ZM3cgKLKfcqAf_U6YAuR2DI8OONKZ18kAp9Syt-u0SJToMTgqAY588X5HOEvCJObRGUzdIeEKcjqOe2FlzeHINVnzdS0pLKw54pjnv8c_CnW6ZUD_m2gh1az9JlZd6WTuNARqisC-XUvYNrlfKQKCgyGlVBgVy8RPgAAAAE2fl32AA'
+api_id = 0
+api_hash = ''
+session_str = ''
 
 app = Client('bot', api_id, api_hash, session_string=session_str)
 print('Waiting for command...')
