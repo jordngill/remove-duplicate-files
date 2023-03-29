@@ -11,7 +11,7 @@ session_str = 'BQGYYgwAt_acUeuvKUhGGC6ScPbOm1C2MZ-u4CWzaqRYZ6UFOECI3-Oz2Deyj5zL1
 app = Client('bot', api_id, api_hash, session_string=session_str)
 print('Waiting for command...')
 
-@app.on_message(filters.group | filters.channel & filters.command('remove_duplicate'))
+@app.on_message((filters.group | filters.channel) & filters.command(['remove_duplicate']))
 async def remove(_, message):
     chat_id = message.chat.id
 
@@ -67,7 +67,7 @@ async def remove(_, message):
         scanned += 1
         print(f'Scanned : {scanned}/{messages} | Removed : {removed} | Failed : {failed}', end='\r' if scanned != messages else '\n')
 
-        await asyncio.sleep(0.5)
+        await asyncio.sleep(0.2)
 
 app.run()
 
